@@ -29,6 +29,7 @@ searchButton.addEventListener('click', function (e) {
         error.innerHTML = "Please enter something in a search field";
         error.style.display = 'block';
     }
+    
     //4. Sending results from the search box
     else {
          //6. Saving search history
