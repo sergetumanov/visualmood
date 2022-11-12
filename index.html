@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Main CSS file! -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Main JavaScript FIle -->
+    <script src="js/main.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+
+    <title>Visual Mood</title>
+</head>
+<body>
+    <header>
+        <div class="header-branding">
+            <h1>VISUAL MOOD - see what you feel</h1>
+        </div>
+        <section>
+            <!-- Nav bar -->
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link custom-link customactive" aria-current="page" href="index.html">VIDEO</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link custom-link" href="ai.html">AI</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link custom-link" href="contact.html">CONTACT</a>
+                </li>
+              </ul>
+        </section>
+    </header>
+    
+    <!-- Search Box Section -->
+    <section class="search-box">
+        <h2>Let's find out about your mood, try to search something like "feeling sad, happy dance, excited" or pretty much anything you feel like!</h2>
+        <h3>Simple as 1, 2, 3, action!</h3>
+        
+        <!-- Instructions -->
+        <div class="card mb-3 mt-5">
+            <div class="card-body">
+                <h5 class="card-title">Step 1:</h5>
+                <p class="card-text">Use a few words to describe your mood.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Step 2:</h5>
+                <p class="card-text">Click search.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Step 3:</h5>
+                <p class="card-text">Enjoy the video!</p>
+            </div>
+        </div>
+          
+        <!-- Search box -->
+        <input id="searchBox" name="searchBox" class="form-control form-control-lg" type="text" placeholder="Search here..." aria-label="Search">
+        <button id="searchButton" type="button" class="btn btn-info w-100 mt-2">Search</button>
+
+        <div id="history"></div>
+
+        <!-- P element to display error messages -->
+        <p id="error" class="danger"></p>
+
+        <!-- Simple image/thumbnail to make the page look more interesting -->
+        <div class="image display" id="img_temp">
+            <img src="img/thumbnail.jpg" alt="Video Thumbnail" style="max-width: 600px;">
+        </div>
+    </section>
+    <!-- Results Section -->
+    <section class="resultsVideo">
+        <!-- Container to display data from the API -->
+        <div id="video">
+            <video id='videoSource' controls autoplay width="100%>
+                <source src="movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p><strong>VIDEO CREATED BY: </strong> <span class="pink" id="author"></span> 
+            <strong>VIDEO TAGS: </strong> <span class="pink" id="tags"></span></p>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer_about">
+        <br/>
+        <p>The idea of this project is to find video and pictures to reflect a current mood of a user</p>
+        <p> &copy; 2022 Sergei Tumanov </p>
+        <br/>
+        <p>
+            <span>
+                All videos and images are taken from <a href="https://pixabay.com/">Pixabay</a>
+            </span> | 
+            <span>
+                Icons are taken from <a href="https://www.flaticon.com/free-icons/music" title="Icons">Freepik - Flaticon</a>
+            </span>
+        </p>
+    </footer>
+</body>
+</html>

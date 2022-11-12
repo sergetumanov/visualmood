@@ -1,0 +1,177 @@
+/* Root Styles */
+:root {
+    --dark: #101010;
+    --white: #ffffff;
+    --button: #6f42c1;
+    --alert: #e83e8c;
+    --action: #332F2E;
+}
+
+section {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(../img/video.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header */
+.header-branding {
+    height: 75px;
+    width: 100%;
+}
+
+.header-branding h1 {
+    color: var(--white);
+    font-weight: 200;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Header - navbar */
+ul {
+    display: block;
+    border-bottom: 2px solid #ffffff;
+}
+
+.nav-link.customactive,
+.nav-link.custom-link:hover {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.nav-link.custom-link {
+    border-radius: 0;
+}
+
+a.custom-link,
+h2, h3, h4, h5,
+p {
+    color: var(--white);
+}
+
+/* Body - Search Box */
+.card {
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+}
+
+.card:first-child {
+    margin-top: 5rem;
+}
+
+.search-box,
+.contact-page {
+    margin: 2rem auto;
+}
+
+.contact-page {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.map{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+}
+
+#sendEmail {
+    margin: 25px 0;
+}
+
+#searchBox {
+    margin-bottom: 0.5rem;
+}
+
+#searchBox:focus {   
+    border-color: var(--dark);
+    box-shadow: 0 1px 1px #101010 inset, 0 0 8px #101010;
+    outline: 0 none;
+}
+
+#searchButton {
+    color: var(--white);
+    background-color: var(--dark);
+    border: none;
+    box-shadow: 0 1px 1px #ffffff inset, 0 0 8px #ffffff;
+}
+
+#searchButton:hover {
+    background-color: var(--action);
+} 
+
+/* Body - Video Section */
+#img_temp {
+    width: 100%;
+    display: block;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+#video {
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+    display: none;
+    color: var(--alert);
+}
+
+#video p {
+    color: var(--dark);
+}
+
+#video .pink{
+    font-style: italic;
+    color: var(--alert);
+}
+
+#error {
+    width: 100%;
+    line-height: 1.5rem;
+    padding: 10px;
+    margin: 30px 0;
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #ff0000;
+    text-align: center;
+    text-transform: uppercase;
+    display: none;
+}
+
+/* Footer */
+footer {
+    border-top: 2px solid #ffffff;
+    text-align: center;
+    margin-top: 15rem;
+}
+
+footer a,
+footer p {
+    color: var(--dark);
+    line-height: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+footer a:hover {
+    color: var(--white);
+    text-decoration: none;
+}
