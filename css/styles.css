@@ -56,6 +56,14 @@ p {
 }
 
 /* Body - Search Box */
+.search-box {
+    text-align: center;
+}
+
+.search-box p {
+    font-size: 1.2rem;
+}
+
 .card {
     background-color: transparent;
     border: 1px solid var(--white);

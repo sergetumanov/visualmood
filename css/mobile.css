@@ -1,0 +1,30 @@
+/* Tablet */
+@media (min-width: 501px) and (max-width: 768px) {
+  .search-box p {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  #searchButton{
+    max-width: 90%;
+    margin-bottom: 2rem;
+  }
+
+}
+
+/* Smartphone */
+@media (max-width: 500px) {
+  body > header > section > ul {
+    margin-top: 50px;
+  }
+
+  .w-100 {
+    max-width: 90% !important;
+    margin-bottom: 2rem;
+  }
+
+  #img_temp > img {
+    max-width: 100% !important;
+  }
+  
+}
