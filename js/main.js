@@ -8,7 +8,6 @@ const imgTemp = document.getElementById('img_temp')
 const display = document.getElementById('video')
 const videoSource = document.getElementById('videoSource')
 
-
 //2. Entering API data. URL and apiKEY for further connection to the app
 const baseURL = 'https://pixabay.com/api/videos/'
 const apiKey = '29015028-a7979fd134fe67fa3a9954ab5'
@@ -21,7 +20,6 @@ window.addEventListener('load', () => {
         searchBox.value = lastSearch;
     }
 })
-
 
 //3. Empty field validation and error message
 searchButton.addEventListener('click', function (e) {
@@ -40,7 +38,6 @@ searchButton.addEventListener('click', function (e) {
             display.style.display = 'block';
     }
 })
-
 
 //5. Function to display the results
 async function loadData() {
